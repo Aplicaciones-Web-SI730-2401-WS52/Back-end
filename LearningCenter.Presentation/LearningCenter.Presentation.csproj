@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>_1_API</RootNamespace>
+        <RootNamespace>LearningCenter.Presentation</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,7 +23,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Controllers\"/>
+        <Folder Include="Profiles\" />
+        <Folder Include="Publishing\" />
     </ItemGroup>
 
 </Project>
