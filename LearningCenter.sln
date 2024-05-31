@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infraestruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Presentation", "LearningCenter.Presentation\LearningCenter.Presentation.csproj", "{858F0422-8136-4D9B-B088-729A423D7325}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Presetation.Test", "LearningCenter.Presetation.Test\LearningCenter.Presetation.Test.csproj", "{ED1184D5-26FD-4CA6-B3CC-FB8BF41131D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{858F0422-8136-4D9B-B088-729A423D7325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{858F0422-8136-4D9B-B088-729A423D7325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{858F0422-8136-4D9B-B088-729A423D7325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1184D5-26FD-4CA6-B3CC-FB8BF41131D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1184D5-26FD-4CA6-B3CC-FB8BF41131D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1184D5-26FD-4CA6-B3CC-FB8BF41131D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1184D5-26FD-4CA6-B3CC-FB8BF41131D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

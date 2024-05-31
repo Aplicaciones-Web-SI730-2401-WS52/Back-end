@@ -30,7 +30,7 @@ public class TutorialController : ControllerBase
         var data = await _tutorialData.GetAllAsync();
         var result = _mapper.Map<List<Tutorial>, List<TutorialResponse>>(data);
 
-        if (result.Count == 0) return StatusCode(StatusCodes.Status404NotFound);
+        if (result.Count == 0) return NotFound();
 
         return Ok(result);
     }
