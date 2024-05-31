@@ -40,6 +40,7 @@ public class TutorialController : ControllerBase
     [Route("Search")]
     public async Task<IActionResult> GetSearchAsync(string? name, int? year)
     {
+
         var data = await _tutorialData.GetSearchAsync(name, year);
         var result = _mapper.Map<List<Tutorial>, List<TutorialResponse>>(data);
 
@@ -65,8 +66,7 @@ public class TutorialController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] TutorialRequest input)
     {
-        try
-        {
+
             if (!ModelState.IsValid) return BadRequest();
 
             var tutorial = _mapper.Map<TutorialRequest, Tutorial>(input);
@@ -76,12 +76,6 @@ public class TutorialController : ControllerBase
                 return StatusCode(StatusCodes.Status201Created, result);
 
             return BadRequest();
-        }
-        catch (Exception e)
-        {
-            //throw e;
-            return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-        }
     }
 
     // PUT: api/Tutorial/5

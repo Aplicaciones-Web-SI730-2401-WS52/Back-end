@@ -2,6 +2,7 @@ using _1_API.Mapper;
 using _2_Domain;
 using _3_Data;
 using _3_Data.Contexts;
+using LearningCenter.Presentation.Middleware;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,6 +37,8 @@ builder.Services.AddDbContext<LearningCenterContext>(
     });
 
 var app = builder.Build();
+
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 using (var scope = app.Services.CreateScope())
 using (var context = scope.ServiceProvider.GetService<LearningCenterContext>())
